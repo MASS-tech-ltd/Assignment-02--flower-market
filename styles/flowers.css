@@ -1,6 +1,6 @@
 /* Shared styles */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -8,4 +8,82 @@
 body {
     font-family: "Inter", sans-serif;
     font-family: "Noto Serif", serif;
+}
+
+/* Header related styles */
+
+header {
+    margin: 0px 200px;
+}
+
+/* Nav related styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+.nav-items {
+    display: flex;
+
+}
+
+.nav-items li {
+    margin-right: 48px;
+}
+
+nav li {
+    list-style: none;
+    color: #8987A1;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8987A1;
+}
+
+.home>a {
+    color: #252432;
+    font-weight: 700;
+
+}
+
+li .cart {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.cart>a {
+    color: #000;
+    margin-left: 10px;
+}
+
+/* Responsive styles */
+/* Mobile device */
+
+@media screen and (max-width: 576px) {
+
+    header {
+        margin: 0px 16px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    nav .logo{
+        width: 80px;
+        height:auto;
+    }
+
 }
