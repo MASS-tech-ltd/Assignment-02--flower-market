@@ -198,6 +198,42 @@ li .cart {
     border: 0;
 }
 
+/* Flower & Plants Lover section styles */
+
+.flower-lover-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px;
+    margin-top: 210px;
+}
+
+.flower-lover-img1 {
+    width: 350px;
+    position: absolute;
+    left: 560px;
+    top: 2350px;
+}
+
+.flower-lover-contents {
+    max-width: 640px;
+}
+
+.flower-lover-contents h1 {
+    color: #000;
+    font-family: "Noto Serif";
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.flower-lover-contents p {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
 
 
 /* Responsive styles */
@@ -270,11 +306,11 @@ li .cart {
         margin-bottom: 28px;
     }
 
-    .plants-main-container{
+    .plants-main-container {
         display: flex;
         justify-content: space-between;
         margin: 0px 16px;
-        
+
     }
 
     .plants-container-1 {
@@ -312,5 +348,33 @@ li .cart {
         width: 100%;
         padding: 10px 0px;
     }
+
+    /* Flower & Plants Lover section styles */
+
+    .flower-lover-container {
+        display: block;
+        margin: 0px 17px;
+        margin-top: 42px;
+    }
+
+    .flower-lover-img1 {
+        display: none;
+    }
+
+    .flower-lover-img2 {
+        width: 100%;
+    }
+
+    .flower-lover-contents h1 {
+        font-size: 24px;
+        margin-bottom: 16px;
+        margin-top: 18px;
+    }
+
+    .flower-lover-contents p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
 
 }
