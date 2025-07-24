@@ -68,22 +68,98 @@ li .cart {
     margin-left: 10px;
 }
 
+/* Banner related styles */
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+}
+
+.banner-content {
+    margin-top: 62px;
+}
+
+.banner-title {
+    color: #E95A08;
+    font-family: "Noto Serif";
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-title span {
+    color: #000;
+    font-family: "Noto Serif";
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-des {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Inter;
+    font-size: 1.38rem;
+    font-weight: 400;
+    width: 570px;
+    margin-top: 13px;
+}
+
+
+
+
+
+
+
+
 /* Responsive styles */
 /* Mobile device */
 
 @media screen and (max-width: 576px) {
 
+    /* navbar related styles */
     header {
-        margin: 0px 16px;
+        margin: 0px 0px;
+    }
+
+    nav {
+        margin: 25px 16px;
     }
 
     .nav-items {
         display: none;
     }
 
-    nav .logo{
+    nav .logo {
         width: 80px;
-        height:auto;
+        height: auto;
+    }
+
+    /* Banner related styles */
+    .banner-container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+
+    .banner-hero{
+        width: 425px;
+    }
+
+    .banner-content {
+        margin: 28px 16px 0px 16px;
+    }
+
+    .banner-des {
+        font-size: .875rem;
+        width: 380px;
+        margin-top: 9px;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .banner-title span {
+        font-size: 1.5rem;
     }
 
 }
