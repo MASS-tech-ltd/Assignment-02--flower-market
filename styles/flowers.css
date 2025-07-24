@@ -3,6 +3,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    max-width: 1600px;
 }
 
 body {
@@ -11,10 +17,10 @@ body {
 }
 
 /* Header related styles */
-
+/* 
 header {
     margin: 0px 200px;
-}
+} */
 
 /* Nav related styles */
 
@@ -72,26 +78,25 @@ li .cart {
 
 .banner-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-top: 250px;
 }
 
-.banner-content {
-    margin-top: 62px;
-}
-
 .banner-title {
-    color: #E95A08;
-    font-family: "Noto Serif";
-    font-size: 4rem;
-    font-weight: 700;
-}
-
-.banner-title span {
     color: #000;
     font-family: "Noto Serif";
     font-size: 4rem;
     font-weight: 700;
+    max-width: 517px;
+}
+
+.banner-title span {
+    color: #E95A08;
+    font-size: 4rem;
+    font-weight: 700;
+
+
 }
 
 .banner-des {
@@ -99,14 +104,99 @@ li .cart {
     font-family: Inter;
     font-size: 1.38rem;
     font-weight: 400;
-    width: 570px;
+    max-width: 570px;
     margin-top: 13px;
 }
 
+.banner-hero {
+    width: 100%;
+    display: block;
+}
 
+/* Our plants related styles */
 
+.our-plant-content {
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
 
+.our-plant-content h2 {
+    color: #000;
+    font-family: "Noto Serif";
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
 
+.our-plant-content h2 span {
+    color: #E95A08;
+    text-align: center;
+    font-family: "Noto Serif";
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.our-plant-content p {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+
+.plants-container-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plants-container-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.plants-contents {
+    width: 370px;
+}
+
+.plants-img {
+    width: 100%;
+}
+
+.plants-title {
+    color: #111;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.plants-price {
+    color: #111;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plants-btn {
+    width: 100%;
+    padding: 16px 0px;
+    justify-content: center;
+    align-items: center;
+    background: #E95A08;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+}
 
 
 
@@ -116,9 +206,6 @@ li .cart {
 @media screen and (max-width: 576px) {
 
     /* navbar related styles */
-    header {
-        margin: 0px 0px;
-    }
 
     nav {
         margin: 25px 16px;
@@ -129,37 +216,101 @@ li .cart {
     }
 
     nav .logo {
-        width: 80px;
+        max-width: 80px;
         height: auto;
     }
 
     /* Banner related styles */
+
     .banner-container {
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 40px;
-    }
-
-    .banner-hero{
-        width: 425px;
+        margin-top: 0px;
     }
 
     .banner-content {
         margin: 28px 16px 0px 16px;
     }
 
-    .banner-des {
-        font-size: .875rem;
-        width: 380px;
-        margin-top: 9px;
-    }
-
     .banner-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .banner-title span {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .banner-des {
+        font-size: 14px;
+        margin-top: 9px;
+    }
+
+    .banner-title span {
+        font-size: 2rem;
+    }
+
+    /* Our plants related styles */
+
+    .our-plant-content {
+        max-width: 370px;
+        margin: 0 auto;
+        margin-top: 65px;
+    }
+
+    .our-plant-content h2 {
+        font-size: 32px;
+    }
+
+    .our-plant-content h2 span {
+        font-size: 32px;
+    }
+
+    .our-plant-content p {
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+
+    .plants-main-container{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 16px;
+        
+    }
+
+    .plants-container-1 {
+        display: flex;
+        /* flex: 1; */
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .plants-container-2 {
+        display: flex;
+        /* flex: 1; */
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+
+    .plants-contents {
+        width: 185px;
+    }
+
+    .plants-img {
+        width: 100%;
+    }
+
+    .plants-title {
+        font-size: 16px;
+    }
+
+    .plants-price {
+        font-size: 16px;
+    }
+
+    .plants-btn {
+        width: 100%;
+        padding: 10px 0px;
     }
 
 }
